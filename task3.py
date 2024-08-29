@@ -4,7 +4,7 @@ from lyrics_extractor import SongLyrics
 
 # User-defined function to get lyrics
 def get_lyrics():
-    extract_lyrics = SongLyrics("AIzaSyCOsPyLDMvOQW2mxBU8bqxYlGCimmjVUzY", "https://cse..google.com/cse.js?cx=85950c12085d64270")
+    extract_lyrics = SongLyrics("API_KEY", "GCS_ENGINE_ID")
     song_name = str(e.get())
     temp = extract_lyrics.get_lyrics(song_name)
     res = temp['lyrics']
